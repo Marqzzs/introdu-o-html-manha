@@ -35,7 +35,7 @@ header {
 header h1 {
     color: white;
     font-weight: 300;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
 header h1 #logoux {
@@ -44,13 +44,42 @@ header h1 #logoux {
 }
 
 header nav {
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav a {
     color: white;
     text-decoration: none;
 
+}
+
+/***** Main ******/
+
+main .colunas-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .coluna1 {
+    width: 75%;
+}
+
+/* imagem do lapis */
+main .coluna1 #imagem-lapis {
+    width: 100%;
+}
+
+main .coluna1 .texto-1 {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+main .coluna2 {
+    width: 20%;
 }
 
 /* h2 {
