@@ -11,6 +11,7 @@
 body {
     font-family: 'Quicksand', sans-serif;
     color: gray;
+    background-color: #edeced;
 }
 
 /* configurações genericas */
@@ -18,7 +19,9 @@ body {
 .container-grid {
     width: 80%;
     margin: 0 auto;
-    
+    /* max e min width determina o max e o minino de largura da página */
+    max-width: 1200px;
+    min-width: 992px;
 }
 
 /* cabeçalho */
@@ -29,7 +32,7 @@ header .header-flex {
 }
 
 header {
-    background-color: gray;
+    background-color: #676767;
 }
 
 header h1 {
@@ -62,10 +65,13 @@ header nav a {
 main .colunas-flex {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
-
+/* section com a class coluna 1 */
 main .coluna1 {
     width: 75%;
+    background-color: white;
+    margin-bottom: 20px;
 }
 
 /* imagem do lapis */
@@ -74,12 +80,35 @@ main .coluna1 #imagem-lapis {
 }
 
 main .coluna1 .texto-1 {
-    margin-top: 15px;
+    margin: 15px;
+    /* margin-top: 15px;
     margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px; */
+    /* line-height: muda o espaçamento da linha; */
+    line-height: 22px;
 }
-
+/* aside com a class coluna 2 */
 main .coluna2 {
     width: 20%;
+}
+
+main .coluna2 article {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+/**** Footer *****/
+
+footer {
+    background-color: #676767;
+    color: white;
+    /* padding: espaçamento interno */
+    padding: 5px 0;
+    /* padding: 0; top rigt bottom left  
+    padding: 0 20px; top/bottom rigt/left
+    padding: 0 20px 40px;  top rigt/left bottom 
+    padding: 0 20px 40px 60px; top rigt bottom left */
 }
 
 /* h2 {
